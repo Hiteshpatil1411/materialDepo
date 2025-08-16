@@ -42,8 +42,8 @@ const NewArival = () => {
             />
           </div>
 
-          <div className="card-body text-center p-2">
-            <h6 className="fw-semibold text-truncate mb-0">
+          <div className="card-body text-center p-2 ">
+            <h6 className=" text-truncate mb-0 fs-4">
               <span className="fw-bold">{cat.name} </span>
               <span>from </span>
               <span className="fw-bold" style={{ color: "rgb(168, 122, 132)" }}>{cat.creator}</span>

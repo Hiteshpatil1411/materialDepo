@@ -4,6 +4,9 @@ import Gallery from './homeCol/Gallery';
 import HeroCard from './homeCol/HeroCard';
 import NewArival from './homeCol/NewArival';
 import Catloug from './homeCol/Catloug';
+import BedRoomCarousal from './homeCol/BedRoomCarousal';
+import Explore from './homeCol/Explore';
+import ReviewCard from './homeCol/ReviewCard';
 
 const Home = () => {
 const galleryItems = [
@@ -115,6 +118,36 @@ const catalogItems = [
   { id: 29, image: "/pCatImg/10002.png", title: "Contemporary Louvers", category: "Louvers", price: "9000+ Products | From ₹694 / Sheet", link: "#" },
   { id: 30, image: "/pCatImg/10002.png", title: "Rustic Louvers", category: "Louvers", price: "9000+ Products | From ₹694 / Sheet", link: "#" },
 ];
+const bedroomCard = [
+  // Louvers
+  { id: 1, image: "/pCatImg/10002.png", title: "Modern Louvers", category: "Louvers", price: "₹694 / Sheet", link: "#" },
+  { id: 2, image: "/pCatImg/10002.png", title: "Luxury Louvers", category: "Louvers", price: "₹694 / Sheet", link: "#" },
+  { id: 3, image: "/pCatImg/10002.png", title: "Minimal Louvers", category: "Louvers", price: "₹694 / Sheet", link: "#" },
+  { id: 4, image: "/pCatImg/10002.png", title: "Classic Louvers", category: "Louvers", price: "₹694 / Sheet", link: "#" },
+  { id: 5, image: "/pCatImg/10002.png", title: "Contemporary Louvers", category: "Louvers", price: "₹694 / Sheet", link: "#" },
+  { id: 6, image: "/pCatImg/10002.png", title: "Rustic Louvers", category: "Louvers", price: "₹694 / Sheet", link: "#" },
+];
+const reviews= [
+    {id:1,
+    name:"Arun pushpa",
+    role:"Interior Designer",
+    comment:"I wholeheartedly recommend Material Depot to all architects and designers. Found a brand, got quotes, ordered hassle-free, and smooth delivery. Impressive!",
+    profile:"/pCatImg/cp1.svg",
+rating:5},
+    {id:2,
+    name:"Shriprem",
+    role:"Interior Designer",
+    comment:"I wholeheartedly recommend Material Depot to all architects and designers. Found a brand, got quotes, ordered hassle-free, and smooth delivery. Impressive!",
+    profile:"/pCatImg/cp2.svg",
+    rating:5},
+    {id:3,
+    name:"Anser pushpa",
+    role:"Interior Designer",
+    comment:"I wholeheartedly recommend Material Depot to all architects and designers. Found a brand, got quotes, ordered hassle-free, and smooth delivery. Impressive!",
+    profile:"/pCatImg/cp3.svg",
+rating:5},
+]
+
 
 
   return (
@@ -137,7 +170,32 @@ const catalogItems = [
         <div className="mt-2" >
             
                 
+                <NewArival />            
+        </div>
+        <div className="mt-2" >
+            
+                
                 <Catloug items={catalogItems}/>            
+        </div>
+        <div className="mt-2" >
+            
+                
+                <BedRoomCarousal items={bedroomCard}/>            
+        </div>
+        <div className="mt-2  rounded-3" >
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="/pCatImg/shopNow.jpg" alt="" className='img-fluid w-100' />
+            </a>
+        </div>
+        <div className="mt-2" >
+            
+                
+                <Explore/>            
+        </div>
+        <div className="mt-2" >
+            
+                
+                <ReviewCard items={reviews}/>            
         </div>
 
      </div>

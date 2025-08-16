@@ -70,7 +70,7 @@ const Catloug = ({items}) => {
           />
           <div className="card-body text-center p-2">
             <h6 className="fw-semibold text-truncate mb-0">{item.title}</h6>
-            <p class="card-text"><small class="text-body-secondary">{item.price}</small></p>
+            <p className="card-text"><small class="text-body-secondary">{item.price}</small></p>
           </div>
         </div>
       </a>
