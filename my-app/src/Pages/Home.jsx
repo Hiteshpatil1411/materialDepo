@@ -7,6 +7,7 @@ import Catloug from './homeCol/Catloug';
 import BedRoomCarousal from './homeCol/BedRoomCarousal';
 import Explore from './homeCol/Explore';
 import ReviewCard from './homeCol/ReviewCard';
+import SignUp from './homeCol/SignUp';
 
 const Home = () => {
 const galleryItems = [
@@ -197,6 +198,105 @@ rating:5},
                 
                 <ReviewCard items={reviews}/>            
         </div>
+        <div className="mt-4" >
+            
+                
+                <SignUp/>            
+        </div>
+        <div className="mt-4">
+          <div className=" d-flex justify-content-around flex-wrap p-3">
+            <div className="card  border-0 text-center p-2" style={{width:"100px"}}>
+              <img src="/navBar/Brands.svg" alt="Brands" className="img-fluid card-img-top" />
+              <p className="fw-bold m-0">200+</p>
+              <p className="m-0">Brands</p>
+            </div>
+
+            <div className="card border-0 text-center p-2" style={{width:"100px"}}>
+              <img src="/navBar/Customers.svg" alt="Customers" className="img-fluid card-img-top" />
+              <p className="fw-bold m-0">2500 00+</p>
+              <p className="m-0">Customers</p>
+            </div>
+
+            <div className="card border-0 text-center p-2" style={{width:"100px"}}>
+              <img src="/navBar/Products.svg" alt="Products" className="img-fluid card-img-top" />
+              <p className="fw-bold m-0">30000+</p>
+              <p className="m-0">Products</p>
+            </div>
+
+            <div className="card border-0 text-center p-2" style={{width:"100px"}}>
+              <img src="/navBar/Architects.svg" alt="Architects" className="img-fluid card-img-top" />
+              <p className="fw-bold m-0">1100+</p>
+              <p className="m-0 text-break">Architects</p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-2">
+                <h2 className="text-center fw-bold">Today's Question </h2>
+        <div className="row gap-0 rounded-4 p-4 " style={{backgroundColor:"rgb(245,245,246)"}}>
+           <span className='fs-5 my-2'>Can I use plywood for flooring?
+</span>
+<p className='fs-6 text-secondary lh-base font-monospace'>Yes, plywood is a popular choice for subfloors and finished flooring in low-traffic areas. It provides stability, durability, and can be finished with various options such as laminate or veneer. <a href="#" target="_blank" rel="noopener noreferrer">Full answer</a>
+</p> 
+<span><a href="#" target="_blank" rel="noopener noreferrer"> See all QnAs</a></span>
+        </div>
+
+        </div>
+        <div className="mt-2">
+                <p className="p-0 m-0 text-center fw-bold"> Our Trusted <span className='text-warning'>Clients</span></p>
+                <div className="d-flex justify-content-between p-3">
+                        <img src="/pCatImg/10001.svg" alt="" srcset="" className='img-fluid' style={{width:"160px"}}/>
+                        <img src="/pCatImg/10002.svg" alt="" srcset="" className='img-fluid' style={{width:"160px"}}/>
+                        <img src="/pCatImg/10003.svg" alt="" srcset="" className='img-fluid' style={{width:"160px"}}/>
+                        <img src="/pCatImg/10004.png" alt="" srcset="" className='img-fluid' style={{width:"160px"}}/>
+                </div>
+        </div>
+        <div className="mt-4">
+                <p className="text-center">Top Stories</p>
+                <div className="row g-2 mx-1" >
+                <div className="col-12 col-md-4 border rounded-2 d-flex flex-column" >
+                    <div className="booking  ">
+                        <div className="d-md-block  ">
+                            <img src="/pCatImg/10005.png" alt="" className='img-fluid rounded-4' style={{ width: "100%", height: "100%s", objectFit: "cover" }}/>
+                        </div>
+                    </div>
+                    <div className='p-3'>
+                        <h4 className="text-center my-2">Featured in YOURSTORY</h4>
+                        <p className="text-center">Material Depot was recently featured on YOURSTORY for its innovative approach to simplifying the process of material discovery and procurement.</p>
+
+                    </div>
+                </div>
+                <div className="col-12 col-md-8">
+                    <div className="row g-2">
+                            
+                        <div className="col-md-12   ">
+                            <div className="collection m-2 border rounded-2">
+                        <div className="d-md-flex align-items-center gap-3 p-3 ">
+                            <img src="/pCatImg/10006.png" alt="" className='img-fluid r' style={{ width: "70%", height: "", objectFit: "cover" }}/>
+                            <div>
+                                <p className="fw-bold fs-5">
+Material Depot @YCombinator</p>
+                                <p className="text-secondary">"Material Depot, a platform revolutionizing the way architects and designers source materials, has been accepted into Y Combinator's prestigious startup accelerator program."</p>
+
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div className="col-md-12  ">
+                             <div className="collection m-2 border rounded-2">
+                        <div className="d-md-flex align-items-center gap-3 p-3 ">
+                            <img src="/pCatImg/10007.png" alt="" className='img-fluid r' style={{ width: "70%", height: "", objectFit: "cover" }}/>
+                            <div>
+                                <p className="fw-bold fs-5">
+Material Depot @YCombinator</p>
+                                <p className="text-secondary">"Material Depot, a platform revolutionizing the way architects and designers source materials, has been accepted into Y Combinator's prestigious startup accelerator program."</p>
+
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        </div>
 
      </div>
     </>

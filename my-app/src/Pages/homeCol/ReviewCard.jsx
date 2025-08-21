@@ -39,7 +39,7 @@ const ReviewCard = ({items}) => {
                     objectFit: "cover",
                   }}
                 />
-                 <div className="px-2 py-1 position-absolute d-flex rounded top-100 bg-light text-dark start-50 fw-bold text-center translate-middle shadow fs-6" >
+                 <div className="px-2 position-absolute d-flex rounded top-100 bg-light text-dark start-50 fw-bold text-center translate-middle shadow fs-6" >
                                         <i className="bi bi-star-fill text-warning mx-1"> </i>   {val.rating}
                     </div>
               </div>

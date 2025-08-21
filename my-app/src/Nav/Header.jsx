@@ -92,7 +92,7 @@ const Header = ({children }) => {
             <div className='d-md-flex d-none justify-content-center align-items-center py-2 '>
                 <nav className="nav navbar-expand">
                     <div className="container-fluid ">
-                        <ul className="navbar-nav d-flex   gap-3">
+                        <ul className="navbar-nav d-flex   gap-4">
                             {
                                 categories.map((cat)=>(
                                     <li className="nav-item dropdown" key={cat.id}>
@@ -110,7 +110,16 @@ const Header = ({children }) => {
        
             </div> 
             <div className="header-space" style={{minHeight:"135px"}}></div>
+            {/* WhatsApp  */}
 
+            <div className="d-block position-fixed   z-3" style={{bottom:"30px",right:"10px"}}>
+                <div className="d-flex justify-content-center align-items-center p-2">
+                    <span className="rounded-circle bg-success p-2">
+                        <img src="/pCatImg/10008.svg" alt="" />
+                    </span>
+
+                </div>
+            </div>
             {children}
     </div>
     </>
